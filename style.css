@@ -1,0 +1,142 @@
+
+
+body{
+    background: #0b1522;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.heart{
+
+height: 70px;
+width: 70px;
+background: #00bdec;
+position: relative;
+transform: rotate(-45deg);
+box-shadow: -10px -10px 90px #3fd8ff;
+animation: heart 0.6s linear infinite; 
+}
+@keyframes heart{
+   0%{
+        transform: rotate(-45deg) scale(1.07) ;
+   }
+   80%{
+        transform: rotate(-45deg) scale(1.0) ;
+   }
+   100%{
+        transform: rotate(-45deg) scale(0.8) ;
+   }
+}
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #00bdec;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #3fd8ff;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #00bdec;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #3fd8ff;
+}
+
+/* ...love letter  */
+.container{
+   padding-top: 13%;
+   color: white;
+   align-items: center;
+   position: absolute;
+   height: 150px;
+   width: 250px;
+      
+}
+
+.love {
+    padding-top: 30%;   
+}
+
+.love span{color: #3fd8ff;}
+.love a{text-decoration: none;
+    padding: 5px;
+    margin: 0px 45px;  
+}
+
+#no{color:red}
+#yes{color: #00bdec;}
+
+/* ...wait */
+.wait{
+margin-top: 35%;
+padding: 20px;
+position: relative;
+position: absolute;
+top: 0;
+color: white;
+
+}
+
+/* ...love letter  */
+.pic{
+  
+    margin-top: 35%;
+    padding: 20px;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+    
+}
+.message{
+    margin-top: 20%;
+    padding: 5px;
+    position: relative;
+    position: absolute;
+    color: aqua;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.yeshea{
+   
+    color: white;
+    top: 0;
+    margin-bottom: 30%;
+    padding: 20px;
+    position: relative;
+    position: absolute; 
+    margin-left: -11%;
+    font-size: 35px;
+   
+    img{height: 40px; width: 40px;
+        animation: hear 4s linear infinite;}
+    }  
+
+    @keyframes hear{
+        0%{transform: scale(.05);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(.5);}
+
+        }
+
+
+  
+
+    
+
+    
+ 
